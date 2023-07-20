@@ -4,13 +4,7 @@
 
 
 
-DISCLAIMER: I used the code written here: https://github.com/Project-Path-of-Exile-Wiki/poe-wiki-search
-
-I've had to update it to get on the google extension store to manifest version 3. This has changed some functionality but overall it does it's job.
-
-
-
-This is a browser extension designed to be used in Firefox, Google Chrome, and chromium-based browsers (such as MS Edge) by players Baldur's Gate 3
+DISCLAIMER: I used the code written here: https://github.com/Project-Path-of-Exile-Wiki/poe-wiki-search and https://github.com/DAFF0D11/hard-redirect
 
 - An easy to use search for information about the game using the [official community wiki](www.bg3.wiki).
 
@@ -49,50 +43,4 @@ Probably not. It's meant to do a very specific thing and it mostly does that.
 
 Yes, as long as the wiki is up, this should be something we actively maintain. Although it does not need much maintenance. It's a VERY small extension for now.
 If for some reason, the community wiki becomes riddled with advertismenets or anything like that, I'll reroute to a different wiki or take this extension down.
-
-
-* Hard Redirect
-
-A simple browser extension to redirect urls defined by *you* in the source code.
-
-** Features
-- Regex defined url matching.
-- Enable/Disable redirects in popup menu.
-
-** How to add redirects
-
-Redirects are defined at the top of background.js.
-
-#+begin_src javascript
-   let redirectList = [
-    { id: 1, label: "google  -> startpage", from: "https://www.google.com/(.*)", to: "https://www.startpage.com/\\1", enabled: false },
-    { id: 2, label: "youtube -> piped", from: "(.*)youtube.com/(.*)", to: "https://piped.kavin.rocks/\\2", enabled: true },
-    { id: 3, label: "reddit  -> libreddit", from: "(.*)reddit.com(.*)", to: "https://libredd.it/\\2", enabled: true },
-]
-#+end_src
-
-Redirects are comprised of:
-
-*id:* sequential number to identify individual redirects.
-
-*label:* how the redirect is shown in the popup menu for enabling/disabling redirects.
-
-*from:* pattern to redirect.
-
-*to:* result of redirection.
-
-*enabled:* the default state of the redirect.
-
-** Regex matching
-
-This random google support answer describes the syntax quite well. \\
-https://support.google.com/a/answer/1371415?hl=en
-
-** Install
- 1. Navigate to: chrome://extensions/
- 2. Toggle "Developer mode" in the top right.
- 3. Click "Load unpacked" and select the hard-redirect directory
-
-** Firefox
-Firefox(nightly.101.0a1) does not implement Manifest v3.
 
