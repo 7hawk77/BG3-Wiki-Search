@@ -1,6 +1,5 @@
-<p align="center">
-  <img src="icons/icon_152.png" width="350" title="hover text">
-</p>
+<img src="icons/icon_152.png"/>
+
 
 
 
