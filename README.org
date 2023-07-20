@@ -1,5 +1,7 @@
-![icon_152](icon_152.png)
-# Baldur's Gate 3 Wiki search
+<p align="center">
+  <img src="icons/icon_152.png" width="350" title="hover text">
+</p>
+
 
 
 DISCLAIMER: I used the code written here: https://github.com/Project-Path-of-Exile-Wiki/poe-wiki-search
