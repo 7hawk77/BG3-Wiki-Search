@@ -16,6 +16,13 @@
         "default_title": "BG3 Wiki Search",
         "default_popup": "ui/ui.html"
     },
+	"commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Alt+W"
+            }
+        }
+
     "host_permissions": [
         "<all_urls>"
     ]
