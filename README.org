@@ -1,3 +1,4 @@
+<img src="icons/icon_152.png"/>
 
 
 # Baldur's Gate 3 Wiki search
