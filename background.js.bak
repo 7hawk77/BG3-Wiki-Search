@@ -1,5 +1,5 @@
 const redirectList = [
-    { id: 1, label: "google -> startpage", from: "https://baldursgate3.wiki.fextralife.com/(.*)", to: "https://bg3.wiki/wiki/\\1", enabled: true },
+    { id: 1, label: "google -> startpage", from: "https://www.google.com(.*)", to: "https://bg3.wiki/wiki/\\1", enabled: true },
     { id: 2, label: "youtube -> piped", from: "(.*)youtube.com(.*)", to: "https://piped.kavin.rocks\\2", enabled: true },
     { id: 3, label: "reddit -> libreddit", from: "(.*)reddit.com(.*)", to: "https://libredd.it\\2", enabled: true },
 ]
